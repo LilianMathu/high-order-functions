@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>High order functions in Javascript</title>
-        
-    </head>
-     <body>
-         <ul>
-             <li><h3>forEach</h3></li>
-             <p>
-                <h3>Syntax</h3><br>
-                <code>arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);</code>
-               <h3> Parameters</h3></br>
-                <b>callback</b><br>
-                Function to execute on each element, taking three arguments:</br></br>
-                <b>currentValue</b><br>
-                The current element being processed in the array. It is also called an iterator<br></br>
-                <b> index Optional</b><br>
-                The index of the current element being processed in the array.It also takes the entire array<br></br>
-                <b>array Optional</b><br>
-                The array forEach() was called upon.<br></br>
-                <b>thisArg Optional</b><br>
-                Value to use as this when executing callback.<br></br>
-                <b>Return value</b><br>
-                undefined.<br></br>
-             </p>
-             <li><h3>filter()</h3></li>
-             <p>
-                    The filter() method returns a new array created from all elements that pass a certain 
-                    test preformed on an original array.
-                    <h3>Syntax</h3><br>
-                    <code>let newArr = oldArr.filter(callback);</code>
-                    <ul>
-                    <li>newArr — the new array that is returned</li>
-                    <li>oldArr — the array to run the filter function on</li>
-                    <li>callback — the function used to test each element of the oldArr. </li>
-                        Returning true keeps the element, returning false to not keep it.</li>
-                    </ul>
-                    <h3>Our callback function can take three arguments:</h3>
-                    <li>element — the current element of the array</li>
-                     <li>index — the current index of the value being processed</li>
-                    <li>arr — the original array</li>
-                </ul>
-             </p>
-             <li><h3>reduce()</h3></li>
-             <li><h3>map()</h3></li>
-             <p>
-                The map() method is used to apply a function on every element in an array. 
-                A new array is then returned.<br>
 
-                <h3>Syntax</h3><br>
+<head>
+    <title>High order functions in Javascript</title>
 
-                <code>let newArr = oldArr.map((val, index, arr) => {
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h3>forEach</h3>
+        </li>
+        <p>
+            <h3>Syntax</h3><br>
+            <code>arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);</code>
+            <h3> Parameters</h3></br>
+            <b>callback</b><br>
+            Function to execute on each element, taking three arguments:</br></br>
+            <b>currentValue</b><br>
+            The current element being processed in the array. It is also called an iterator<br></br>
+            <b> index Optional</b><br>
+            The index of the current element being processed in the array.It also takes the entire array<br></br>
+            <b>array Optional</b><br>
+            The array forEach() was called upon.<br></br>
+            <b>thisArg Optional</b><br>
+            Value to use as this when executing callback.<br></br>
+            <b>Return value</b><br>
+            undefined.<br></br>
+        </p>
+        <li>
+            <h3>filter()</h3>
+        </li>
+        <p>
+            The filter() method returns a new array created from all elements that pass a certain
+            test preformed on an original array.
+            <h3>Syntax</h3><br>
+            <code>let newArr = oldArr.filter(callback);</code>
+            <ul>
+                <li>newArr — the new array that is returned</li>
+                <li>oldArr — the array to run the filter function on</li>
+                <li>callback — the function used to test each element of the oldArr. </li>
+                Returning true keeps the element, returning false to not keep it.</li>
+            </ul>
+            <h3>Our callback function can take three arguments:</h3>
+            <li>element — the current element of the array</li>
+            <li>index — the current index of the value being processed</li>
+            <li>arr — the original array</li>
+    </ul>
+    </p>
+    <li>
+        <h3>reduce()</h3>
+    </li>
+    <li>
+        <h3>map()</h3>
+    </li>
+    <p>
+        <ul>
+            <li>The map() method creates a new array with the results of calling a function for every array element.<br></li>
+
+            <li>The map() method calls the provided function once for each element in an array, in order.<br></li>
+            
+            <li>Note: map() does not execute the function for array elements without values.<br></li>
+            
+            <li>Note: this method does not change the original array.<br></li>
+        </ul>
+            
+        <h3>Syntax</h3><br>
+        <code>array.map(function(currentValue, index, arr), thisValue)</code><br><br>
+
+        <code>let newArr = oldArr.map((val, index, arr) => {
                     // return element to new Array
                     });</code><br>
-                    <ul>
-                            <li>newArr — the new array that is returned</li>
-                            <li>oldArr — the array to run the map function on</li>
-                            <li>val — the current value being processed</li>
-                            <li>index — the current index of the value being processed</li>
-                            <li>arr — the original array</li>
-                    </ul>
-             </p>
-             <li><h3>sort()</h3></li>
-             <li><h3>find()</h3></li>
-         </ul>>
-     </body>
+        <ul>
+            <li>newArr — the new array that is returned</li>
+            <li>oldArr — the array to run the map function on</li>
+            <li>val — the current value being processed</li>
+            <li>index — the current index of the value being processed</li>
+            <li>arr — the original array</li>
+        </ul>
+    </p>
+    <li>
+        <h3>sort()</h3>
+    </li>
+    <li>
+        <h3>find()</h3>
+    </li>
+    </ul>
+</body>
+
 </html>
