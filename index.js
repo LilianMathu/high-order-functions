@@ -35,16 +35,22 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // }
 
 // filter long syntax
-const num = numbers.filter(num=> {
-    if(num <=5){
-        return true;
-    }
-});
+// const num = numbers.filter(num=> {
+//     if(num <=5){
+//         return true;
+//     }
+// });
 
-//shorter syntax
-const num = numbers.filter(great=> great>=5);
+// //shorter syntax
+// const num = numbers.filter(great=> great>=5);
 
-console.log(num);
-// sort
+// console.log(num);
+// // sort
+
+// filter married people
+const married = people.filter(couple=> (couple.married ===true && couple.age === 25));
+
+console.log(married);
 // reduce 
 // map 
+
