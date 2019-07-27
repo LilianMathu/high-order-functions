@@ -25,8 +25,42 @@
                 undefined.<br></br>
              </p>
              <li><h3>filter()</h3></li>
+             <p>
+                    The filter() method returns a new array created from all elements that pass a certain 
+                    test preformed on an original array.
+                    <h3>Syntax</h3><br>
+                    <code>let newArr = oldArr.filter(callback);</code>
+                    <ul>
+                    <li>newArr — the new array that is returned</li>
+                    <li>oldArr — the array to run the filter function on</li>
+                    <li>callback — the function used to test each element of the oldArr. </li>
+                        Returning true keeps the element, returning false to not keep it.</li>
+                    </ul>
+                    <h3>Our callback function can take three arguments:</h3>
+                    <li>element — the current element of the array</li>
+                     <li>index — the current index of the value being processed</li>
+                    <li>arr — the original array</li>
+                </ul>
+             </p>
              <li><h3>reduce()</h3></li>
              <li><h3>map()</h3></li>
+             <p>
+                The map() method is used to apply a function on every element in an array. 
+                A new array is then returned.<br>
+
+                <h3>Syntax</h3><br>
+
+                <code>let newArr = oldArr.map((val, index, arr) => {
+                    // return element to new Array
+                    });</code><br>
+                    <ul>
+                            <li>newArr — the new array that is returned</li>
+                            <li>oldArr — the array to run the map function on</li>
+                            <li>val — the current value being processed</li>
+                            <li>index — the current index of the value being processed</li>
+                            <li>arr — the original array</li>
+                    </ul>
+             </p>
              <li><h3>sort()</h3></li>
              <li><h3>find()</h3></li>
          </ul>>
