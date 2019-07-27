@@ -1,10 +1,10 @@
 const people = [
-    {name: "lilian", age:22, married: false, location: "Kisumu "},
+    {name: "lilian", age:16, married: false, location: "Kisumu "},
     {name: "Eleanor", age:25, married: true, location: "Ngong "},
     {name: "Nyakio", age:21, married: true, location: "KIserian "},
     {name: "Liz", age:49, married: true, location: "Gategi "},
     {name: "Mathu", age:55, married: true, location: "Kiambu "},
-    {name: "Tonny", age: 31, married: false, location: "Twala "},
+    {name: "Tonny", age: 12, married: false, location: "Twala "},
 ];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -17,14 +17,23 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  }
 */
 
-people.forEach((person)=> {
-    console.log(person.name);
-})
-number.forEach(function(index){
-    console.log(index);
-})
+// people.forEach((person)=> {
+//     console.log(person.name);
+// })
+// number.forEach(function(index){
+//     console.log(index);
+// })
 
 // filter 
+// standard for loop
+let num = [];
+
+for (let i = 0; i < numbers.length; i++) {
+    if(numbers[i] >= 5){
+        num.push(numbers[i]);
+    }
+}
+console.log(num);
 // sort
 // reduce 
 // map 
