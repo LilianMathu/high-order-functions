@@ -56,6 +56,14 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // map 
 // create an array of people's names
 
-const peoplesNames = people.map(person => `${person.name} : ${person.age}`);
+// const peoplesNames = people.map(person => `${person.name} : ${person.age}`);
 
-console.log(peoplesNames);
+// console.log(peoplesNames);
+
+
+
+//sort()
+//sort age
+
+const sortAge = people.sort((a, b)=> a.age -b.age);
+console.log(sortAge);
