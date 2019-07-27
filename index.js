@@ -26,13 +26,24 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // filter 
 // standard for loop
-let num = [];
+// let num = [];
 
-for (let i = 0; i < numbers.length; i++) {
-    if(numbers[i] >= 5){
-        num.push(numbers[i]);
+// for (let i = 0; i < numbers.length; i++) {
+//     if(numbers[i] >= 5){
+//         num.push(numbers[i]);
+//     }
+// }
+
+// filter long syntax
+const num = numbers.filter(num=> {
+    if(num <=5){
+        return true;
     }
-}
+});
+
+//shorter syntax
+const num = numbers.filter(great=> great>=5);
+
 console.log(num);
 // sort
 // reduce 
